@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:background="#FFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/avatarList"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/cropcircle"
+        tools:srcCompat="@mipmap/cropcircle"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/ml5"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/avatarList"
+        app:layout_constraintTop_toTopOf="@id/avatarList"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:id="@+id/verify"
+        android:layout_width="15dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:contentDescription="verify"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/userName"
+        app:layout_constraintTop_toTopOf="@id/avatarList"
+        app:srcCompat="@drawable/verify"
+        tools:srcCompat="@drawable/verify"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/userLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="ml5"
+        android:textColor="#A9A9A9"
+        app:layout_constraintStart_toEndOf="@id/verify"
+        app:layout_constraintTop_toTopOf="@id/avatarList"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="1m"
+        android:textColor="#A9A9A9"
+        app:layout_constraintBottom_toBottomOf="@+id/userName"
+        app:layout_constraintStart_toEndOf="@id/userLogin"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/avatarList" />
+
+
+    <ImageView
+        android:id="@+id/down"
+        android:layout_width="15dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/down"
+        app:layout_constraintBottom_toBottomOf="@+id/time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/avatarList"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/userMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="7dp"
+        android:text="Good luck finding a better view vavhjiolbvcbvn hjkljhgb hdsjkdn asjvkcnms asvikjdcnkcdv huaidvjkmnjkdesddjsikldvfmlkdm,v"
+        android:textColor="#000"
+        android:textStyle="normal"
+        app:drawableTint="#C0BFBF"
+        android:maxLines="2"
+        android:minLines="1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/userName"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/avatarList"
+        app:layout_constraintTop_toBottomOf="@id/userMessage" />
+    <ImageView
+        android:id="@+id/commentIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:tint="#B1ABAB"
+        app:layout_constraintStart_toStartOf="@id/userName"
+        app:layout_constraintTop_toBottomOf="@id/userImage"
+        app:srcCompat="@android:drawable/sym_action_chat"
+        tools:srcCompat="@android:drawable/sym_action_chat" />
+
+    <TextView
+        android:id="@+id/commentContain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginStart="3dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/commentIcon"
+        app:layout_constraintStart_toEndOf="@id/commentIcon"
+        android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:id="@+id/retweetIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:scaleType="centerInside"
+        android:tint="#B1ABAB"
+        app:layout_constraintStart_toEndOf="@id/commentIcon"
+        app:layout_constraintTop_toTopOf="@id/commentIcon"
+        app:srcCompat="@mipmap/retweet"
+        tools:srcCompat="@mipmap/retweet" />
+
+    <TextView
+        android:id="@+id/retweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_marginStart="3dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/commentIcon"
+        app:layout_constraintStart_toEndOf="@id/retweetIcon"
+        android:layout_marginLeft="3dp" />
+
+    <ImageView
+        android:id="@+id/likeIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@id/retweetIcon"
+        app:layout_constraintTop_toTopOf="@id/commentIcon"
+        app:srcCompat="@mipmap/like"
+        tools:srcCompat="@mipmap/like"
+        android:layout_marginLeft="50dp" />
+
+    <TextView
+        android:id="@+id/likeContain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_10"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginStart="3dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/commentIcon"
+        app:layout_constraintStart_toEndOf="@id/likeIcon"
+        android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:id="@+id/shareIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:contentDescription="@string/dggv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/commentIcon"
+        app:srcCompat="@android:drawable/ic_menu_share"
+        tools:srcCompat="@android:drawable/ic_menu_share" />
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
